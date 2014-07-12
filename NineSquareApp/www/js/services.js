@@ -2,7 +2,7 @@ angular.module('starter.services', ["firebase", 'google-maps'])
 /**
  * A simple example service that returns some data.
  */
-.factory('Events', function($firebase) {
+.factory('Events', function($firebase, $http) {
   // Might use a resource here that returns a JSON array
   
   var ref = new Firebase("https://intense-fire-8983.firebaseio.com/events/")
@@ -28,6 +28,21 @@ angular.module('starter.services', ["firebase", 'google-maps'])
         navigator.geolocation.getCurrentPosition(function(position) {
             event.latitude = position.coords.latitude;
             event.longitude = position.coords.longitude;
+
+            var request = $http({
+                method: "get",
+                url: 'https://maps.googleapis.com/maps/api/geocode/json?latlng='
+                    + event.latitude + ',' + event.longitude
+                    + '&key=AIzaSyA1rCyIKQx6UgNgBv7_ZqGAQyBUIvNiO0U',
+            });
+ 
+            request.then(function(data) {
+                console.log(data.data);
+                event.location = data.data.results[0].formatted_address;
+            }, function(err) {
+                console.log(err);
+            });
+ 
         });
         return event;
     },
