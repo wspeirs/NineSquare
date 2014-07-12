@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <script src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+    
+    <!-- Taken from: http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript -->
+    <script>
+        (function($) {
+            $.QueryString = (function(a) {
+                if (a == "") return {};
+                var b = {};
+                for (var i = 0; i < a.length; ++i)
+                {
+                    var p=a[i].split('=');
+                    if (p.length != 2) continue;
+                    b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+                }
+                return b;
+            })(window.location.search.substr(1).split('&'))
+        })(jQuery);
+    </script>
+  </head>
+  
+  <body>
+    <div id='name'></div>
+    <div id='comments'></div>
+
+    <script>
+      var eventId = $.QueryString["id"];
+      var firebaseRef = new Firebase('https://intense-fire-8983.firebaseio.com/events/');
+      
+      firebaseRef.auth("6z1mTw1RkfdwlLdXLHRoqyQy7JDfCdEWAPZuJo9R");
+      
+      firebaseRef.on('child_added', function(snapshot) {
+        // this contains all of the comments
+        var comments = snapshot.val();
+        
+        //console.log(snapshot.val());
+        console.log(snapshot);
+                
+        return;
+        
+        $.each(events, function(k,v) {
+            displayEvent(v, k);
+        });
+      });
+      
+      function displayEvent(event, link) {
+        console.log(event);
+        $('<div/>').append($('<a></a>').append(event.name).attr('href', '?id=' + link)).appendTo($('#eventsDiv'));
+        $('#eventsDiv')[0].scrollTop = $('#eventsDiv')[0].scrollHeight;
+      };
+    </script>
+    
+  </body>
+</html>
