@@ -9,10 +9,20 @@ angular.module('starter.controllers', [])
 
 .controller('EventDetailCtrl', function($scope, $stateParams, Events) {
   $scope.event = Events.get($stateParams.eventId);
-  $scope.comment = "";
-  $scope.addCommpent = function() {
-    $scope.addComment($stateParams.eventId);
-  };
+
+    $scope.map = {
+        center: {
+            latitude: $scope.event.latitude,
+            longitude: $scope.event.longitude
+        },
+        marker: {
+            latitude: $scope.event.latitude,
+            longitude: $scope.event.longitude
+        },
+        zoom: 15,
+   };
+
+
 })
 
 .controller('EventCreateCtrl', function($scope, $window, Events) {

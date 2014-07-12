@@ -1,4 +1,4 @@
-angular.module('starter.services', ["firebase"])
+angular.module('starter.services', ["firebase", 'google-maps'])
 /**
  * A simple example service that returns some data.
  */
