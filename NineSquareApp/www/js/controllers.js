@@ -15,10 +15,10 @@ angular.module('starter.controllers', [])
             latitude: $scope.event.latitude,
             longitude: $scope.event.longitude
         },
-        marker: {
+        markers: [{
             latitude: $scope.event.latitude,
             longitude: $scope.event.longitude
-        },
+        }],
         zoom: 15,
    };
 

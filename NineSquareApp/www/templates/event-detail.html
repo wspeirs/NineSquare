@@ -27,8 +27,10 @@
       }
     </style>
     <google-map center="map.center" zoom="map.zoom">
-        <marker coords='markers' icon='map.marker.icon'>
-        </marker>
+        <markers>
+            <marker ng-repeat="marker in map.markers" coords="marker">
+            </marker>
+        </markers>
     </google-map>
     <h2>Comments</h2>
     <ul>
