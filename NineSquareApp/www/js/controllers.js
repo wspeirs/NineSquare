@@ -11,5 +11,13 @@ angular.module('starter.controllers', [])
   $scope.friend = Friends.get($stateParams.friendId);
 })
 
+.controller('EventCreateCtrl', function($scope, $window, Friends) {
+  $scope.event = Friends.new();
+  $scope.set = function(event) {
+    Friends.set(event);
+    $window.location.href = '#/tab/event/' + event.name;
+  };
+})
+
 .controller('AccountCtrl', function($scope) {
 });

@@ -15,7 +15,16 @@ angular.module('starter.services', ["firebase"])
     get: function(friendId) {
       // Simple index lookup
       return friends[friendId];
+    },
+    set: function(event) {
+        console.log("Event:", event);
+        $firebase(ref).$add(event);
+    },
+    new: function() {
+        return {
+            name: ''
+        };
     }
   }
-  
+
 });
