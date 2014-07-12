@@ -1,0 +1,56 @@
+2014-07-12 11:36:34.763 HelloCordova[48264:a0b] Multi-tasking -> Device: YES, App: YES
+2014-07-12 11:36:34.769 HelloCordova[48264:a0b] Unlimited access to network resources
+2014-07-12 11:36:34.783 HelloCordova[48264:a0b] [CDVTimer][keyboard] 0.064015ms
+2014-07-12 11:36:34.784 HelloCordova[48264:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-12 11:36:34.784 HelloCordova[48264:a0b] [CDVTimer][statusbar] 0.277996ms
+2014-07-12 11:36:34.784 HelloCordova[48264:a0b] [CDVTimer][TotalPluginStartup] 1.058996ms
+2014-07-12 11:36:34.857 HelloCordova[48264:a0b] Resetting plugins due to page load.
+2014-07-12 11:36:34.959 HelloCordova[48264:a0b] Finished load of: file:///Users/sponnaganti0569/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/DB0867F5-443C-432F-BF1E-365D729F2473/HelloCordova.app/www/index.html#/tab/dash
+2014-07-12 11:43:17.916 HelloCordova[48629:a0b] Multi-tasking -> Device: YES, App: YES
+2014-07-12 11:43:17.922 HelloCordova[48629:a0b] Unlimited access to network resources
+2014-07-12 11:43:17.939 HelloCordova[48629:a0b] [CDVTimer][keyboard] 0.061035ms
+2014-07-12 11:43:17.939 HelloCordova[48629:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-12 11:43:17.939 HelloCordova[48629:a0b] [CDVTimer][statusbar] 0.358045ms
+2014-07-12 11:43:17.940 HelloCordova[48629:a0b] [CDVTimer][TotalPluginStartup] 1.267016ms
+2014-07-12 11:43:18.084 HelloCordova[48629:a0b] Resetting plugins due to page load.
+2014-07-12 11:43:18.243 HelloCordova[48629:a0b] Finished load of: file:///Users/sponnaganti0569/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/DB0867F5-443C-432F-BF1E-365D729F2473/HelloCordova.app/www/index.html#/tab/dash
+2014-07-12 11:45:28.465 HelloCordova[48970:a0b] Multi-tasking -> Device: YES, App: YES
+2014-07-12 11:45:28.472 HelloCordova[48970:a0b] Unlimited access to network resources
+2014-07-12 11:45:28.497 HelloCordova[48970:a0b] [CDVTimer][keyboard] 0.101984ms
+2014-07-12 11:45:28.498 HelloCordova[48970:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-12 11:45:28.500 HelloCordova[48970:a0b] [CDVTimer][statusbar] 1.436055ms
+2014-07-12 11:45:28.501 HelloCordova[48970:a0b] [CDVTimer][TotalPluginStartup] 3.699958ms
+2014-07-12 11:45:28.589 HelloCordova[48970:a0b] Resetting plugins due to page load.
+2014-07-12 11:45:28.718 HelloCordova[48970:a0b] Finished load of: file:///Users/sponnaganti0569/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/DB0867F5-443C-432F-BF1E-365D729F2473/HelloCordova.app/www/index.html#/tab/dash
+2014-07-12 11:47:32.390 HelloCordova[49330:a0b] Multi-tasking -> Device: YES, App: YES
+2014-07-12 11:47:32.399 HelloCordova[49330:a0b] Unlimited access to network resources
+2014-07-12 11:47:32.418 HelloCordova[49330:a0b] [CDVTimer][keyboard] 0.088990ms
+2014-07-12 11:47:32.418 HelloCordova[49330:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-12 11:47:32.419 HelloCordova[49330:a0b] [CDVTimer][statusbar] 0.418961ms
+2014-07-12 11:47:32.419 HelloCordova[49330:a0b] [CDVTimer][TotalPluginStartup] 1.410961ms
+2014-07-12 11:47:32.527 HelloCordova[49330:a0b] Resetting plugins due to page load.
+2014-07-12 11:47:32.690 HelloCordova[49330:a0b] Finished load of: file:///Users/sponnaganti0569/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/DB0867F5-443C-432F-BF1E-365D729F2473/HelloCordova.app/www/index.html#/tab/dash
+2014-07-12 11:48:24.966 HelloCordova[49659:a0b] Multi-tasking -> Device: YES, App: YES
+2014-07-12 11:48:24.975 HelloCordova[49659:a0b] Unlimited access to network resources
+2014-07-12 11:48:24.993 HelloCordova[49659:a0b] [CDVTimer][keyboard] 0.088990ms
+2014-07-12 11:48:24.993 HelloCordova[49659:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-12 11:48:24.997 HelloCordova[49659:a0b] [CDVTimer][statusbar] 3.540039ms
+2014-07-12 11:48:24.999 HelloCordova[49659:a0b] [CDVTimer][TotalPluginStartup] 6.127954ms
+2014-07-12 11:48:25.117 HelloCordova[49659:a0b] Resetting plugins due to page load.
+2014-07-12 11:48:25.274 HelloCordova[49659:a0b] Finished load of: file:///Users/sponnaganti0569/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/DB0867F5-443C-432F-BF1E-365D729F2473/HelloCordova.app/www/index.html#/tab/dash
+2014-07-12 11:50:31.660 HelloCordova[49856:a0b] Multi-tasking -> Device: YES, App: YES
+2014-07-12 11:50:31.669 HelloCordova[49856:a0b] Unlimited access to network resources
+2014-07-12 11:50:31.686 HelloCordova[49856:a0b] [CDVTimer][keyboard] 0.059009ms
+2014-07-12 11:50:31.687 HelloCordova[49856:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-12 11:50:31.687 HelloCordova[49856:a0b] [CDVTimer][statusbar] 0.384986ms
+2014-07-12 11:50:31.687 HelloCordova[49856:a0b] [CDVTimer][TotalPluginStartup] 1.275003ms
+2014-07-12 11:50:31.780 HelloCordova[49856:a0b] Resetting plugins due to page load.
+2014-07-12 11:50:31.895 HelloCordova[49856:a0b] Finished load of: file:///Users/sponnaganti0569/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/DB0867F5-443C-432F-BF1E-365D729F2473/HelloCordova.app/www/index.html#/tab/dash
+2014-07-12 11:53:33.594 HelloCordova[50054:a0b] Multi-tasking -> Device: YES, App: YES
+2014-07-12 11:53:33.600 HelloCordova[50054:a0b] Unlimited access to network resources
+2014-07-12 11:53:33.623 HelloCordova[50054:a0b] [CDVTimer][keyboard] 0.100017ms
+2014-07-12 11:53:33.624 HelloCordova[50054:a0b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-12 11:53:33.625 HelloCordova[50054:a0b] [CDVTimer][statusbar] 0.820994ms
+2014-07-12 11:53:33.626 HelloCordova[50054:a0b] [CDVTimer][TotalPluginStartup] 3.062010ms
+2014-07-12 11:53:33.713 HelloCordova[50054:a0b] Resetting plugins due to page load.
+2014-07-12 11:53:33.832 HelloCordova[50054:a0b] Finished load of: file:///Users/sponnaganti0569/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/DB0867F5-443C-432F-BF1E-365D729F2473/HelloCordova.app/www/index.html#/tab/dash
