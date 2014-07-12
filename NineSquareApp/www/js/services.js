@@ -16,13 +16,20 @@ angular.module('starter.services', ["firebase"])
       return $firebase(ref).$child(eventId);
     },
     set: function(event) {
-        console.log("Event:", event);
-        $firebase(ref).$add(event);
+        //console.log("Event:", event);
+        return $firebase(ref).$add(event);
     },
     new: function() {
-        return {
-            name: ''
+        var event = {
+            name: '',
+            comments: {
+            }
         };
+        navigator.geolocation.getCurrentPosition(function(position) {
+            event.latitude = position.coords.latitude;
+            event.longitude = position.coords.longitude;
+        });
+        return event;
     }
   }
 
