@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <script src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+    <link rel='stylesheet' type='text/css' href='../css/example.css'>
+  </head>
+  
+  <body>
+    <div id='eventsDiv'></div>
+    <input type='text' id='nameInput' placeholder='Name'>
+    <input type='text' id='messageInput' placeholder='Message'>
+
+    <script>
+      var firebaseRef = new Firebase('https://intense-fire-8983.firebaseio.com/');
+      
+      firebaseRef.auth("6z1mTw1RkfdwlLdXLHRoqyQy7JDfCdEWAPZuJo9R");
+      
+      $('#messageInput').keypress(function (e) {
+        if (e.keyCode == 13) {
+          var name = $('#nameInput').val();
+          var text = $('#messageInput').val();
+          firebaseRef.push({name: name, text: text});
+          $('#messageInput').val('');
+        }
+      });
+      
+      firebaseRef.on('child_added', function(snapshot) {
+        // this contains all of the events
+        var events = snapshot.val();
+        
+        console.log(events);
+        
+        $.each(events, function(k,v) {
+            displayEvent(v, k);
+        });
+      });
+      
+      function displayEvent(event, link) {
+        console.log(event);
+        $('<div/>').append($('<a></a>').append(event.name).attr('href', 'display.html?id=' + link)).appendTo($('#eventsDiv'));
+        $('#eventsDiv')[0].scrollTop = $('#eventsDiv')[0].scrollHeight;
+      };
+    </script>
+    
+  </body>
+</html>
