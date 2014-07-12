@@ -22,7 +22,15 @@ angular.module('starter.controllers', [])
         zoom: 15,
    };
 
-
+    $scope.comment = Events.newComment();
+    $scope.addComment = function(event, comment) {
+        console.log(event, comment);
+        Events.addComment(event, comment).then(function() {
+            console.log('Success');
+        }, function() {
+            console.log('Failed');
+        });
+    }
 })
 
 .controller('EventCreateCtrl', function($scope, $window, Events) {

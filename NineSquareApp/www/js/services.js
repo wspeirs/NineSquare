@@ -30,7 +30,16 @@ angular.module('starter.services', ["firebase", 'google-maps'])
             event.longitude = position.coords.longitude;
         });
         return event;
-    }
+    },
+    newComment: function() {
+        return {
+            name: '',
+            text: '',
+        };
+    },
+    addComment: function(event, comment) {
+        return event.$child('comments').$add(comment);
+    },
   }
 
 });
