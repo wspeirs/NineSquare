@@ -11,10 +11,10 @@ angular.module('starter.controllers', [])
   $scope.event = Events.get($stateParams.eventId);
 })
 
-.controller('EventCreateCtrl', function($scope, $window, Friends) {
-  $scope.event = Friends.new();
+.controller('EventCreateCtrl', function($scope, $window, Events) {
+  $scope.event = Events.new();
   $scope.set = function(event) {
-    Friends.set(event);
+    Events.set(event);
     $window.location.href = '#/tab/event/' + event.name;
   };
 })
