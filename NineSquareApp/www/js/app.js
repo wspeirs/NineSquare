@@ -66,6 +66,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.event-create', {
+      url: '/events/create',
+      views: {
+        'tab-event-create': {
+          templateUrl: 'templates/tab-event-create.html',
+          controller: 'EventCreateCtrl'
+        }
+      }
+    })
 
     .state('tab.account', {
       url: '/account',

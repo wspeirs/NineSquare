@@ -1,1 +1,4 @@
 node_modules/
+
+# ignore vim temporary files
+*.swp

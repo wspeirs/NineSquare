@@ -15,7 +15,16 @@ angular.module('starter.services', ["firebase"])
     get: function(eventId) {
       // Simple index lookup
       return events[eventId];
+    },
+    set: function(event) {
+        console.log("Event:", event);
+        $firebase(ref).$add(event);
+    },
+    new: function() {
+        return {
+            name: ''
+        };
     }
   }
-  
+
 });
