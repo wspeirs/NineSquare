@@ -1,26 +1,21 @@
-angular.module('starter.services', [])
-
+angular.module('starter.services', ["firebase"])
 /**
  * A simple example service that returns some data.
  */
-.factory('Friends', function() {
+.factory('Events', function($firebase) {
   // Might use a resource here that returns a JSON array
-
-  // Some fake testing data
-  var friends = [
-    { id: 0, name: 'Scruff McGruff' },
-    { id: 1, name: 'G.I. Joe' },
-    { id: 2, name: 'Miss Frizzle' },
-    { id: 3, name: 'Ash Ketchum' }
-  ];
+  
+  var ref = new Firebase("https://intense-fire-8983.firebaseio.com/events/")
+  ref.auth("6z1mTw1RkfdwlLdXLHRoqyQy7JDfCdEWAPZuJo9R");
 
   return {
     all: function() {
-      return friends;
+      return $firebase(ref);
     },
-    get: function(friendId) {
+    get: function(eventId) {
       // Simple index lookup
-      return friends[friendId];
+      return events[eventId];
     }
   }
+  
 });

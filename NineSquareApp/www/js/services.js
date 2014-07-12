@@ -2,7 +2,7 @@ angular.module('starter.services', ["firebase"])
 /**
  * A simple example service that returns some data.
  */
-.factory('Friends', function($firebase) {
+.factory('Events', function($firebase) {
   // Might use a resource here that returns a JSON array
   
   var ref = new Firebase("https://intense-fire-8983.firebaseio.com/events/")
@@ -12,9 +12,9 @@ angular.module('starter.services', ["firebase"])
     all: function() {
       return $firebase(ref);
     },
-    get: function(friendId) {
+    get: function(eventId) {
       // Simple index lookup
-      return friends[friendId];
+      return events[eventId];
     }
   }
   
