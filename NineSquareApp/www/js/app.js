@@ -21,8 +21,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $logProvider) {
 
+$logProvider.debugEnabled(true);
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
@@ -58,9 +59,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
     .state('tab.event-detail', {
-      url: '/event-detail/:eventId',
+      url: '/events/detail/:eventId',
       views: {
-        'tab-event': {
+        'tab-events': {
           templateUrl: 'templates/event-detail.html',
           controller: 'EventDetailCtrl'
         }
